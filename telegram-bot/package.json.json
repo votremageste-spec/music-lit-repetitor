@@ -1,0 +1,15 @@
+{
+  "name": "music-lit-bot",
+  "version": "1.0.0",
+  "description": "Telegram бот для репетитора по музыкальной литературе",
+  "main": "bot.js",
+  "scripts": {
+    "start": "node bot.js",
+    "dev": "node bot.js"
+  },
+  "dependencies": {
+    "telegraf": "^4.15.3",
+    "axios": "^1.6.2",
+    "cors": "^2.8.5"
+  }
+}

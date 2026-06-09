@@ -1,0 +1,26 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "telegram-bot/bot.js",
+      "use": "@vercel/node"
+    },
+    {
+      "src": "mini-app/**",
+      "use": "@vercel/static-build",
+      "config": {
+        "distDir": "mini-app/dist"
+      }
+    }
+  ],
+  "routes": [
+    {
+      "src": "/webhook",
+      "dest": "/telegram-bot/bot.js"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/mini-app/index.html"
+    }
+  ]
+}
