@@ -2,11 +2,9 @@
   "name": "music-lit-repetitor",
   "version": "1.0.0",
   "description": "Репетитор по русской музыкальной литературе для ДМШ/ДШИ",
-  "main": "telegram-bot/bot.js",
+  "main": "index.html",
   "scripts": {
-    "dev:bot": "node telegram-bot/bot.js",
-    "dev:app": "cd mini-app && npm run dev",
-    "deploy": "vercel --prod"
+    "build": "cd mini-app && npm install && npm run build"
   },
   "keywords": ["music", "education", "telegram", "bot", "mini-app"],
   "author": "",
