@@ -13,6 +13,7 @@ interface Composer {
   shortBio: string;
   mainWorks: string;
   examNotes: string;
+  programs: string[];
 }
 
 interface Ticket {
